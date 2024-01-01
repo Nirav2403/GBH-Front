@@ -1,5 +1,6 @@
-import NotFoundPage from "../NotFound/NotFoundPage";
+import NotFoundPage from "../common/NotFound/NotFoundPage";
 import AdminRoutes from "./AdminRoutes";
+import AuthRoutes from "./AuthRoutes";
 import LayoutRoutes from "./LayoutRoutes";
 
 const CommonRoutes = [
@@ -12,4 +13,9 @@ const CommonRoutes = [
   },
 ];
 
-export const routes = [...AdminRoutes, ...LayoutRoutes, ...CommonRoutes];
+export const routes = [
+  ...AdminRoutes,
+  ...AuthRoutes,
+  ...LayoutRoutes,
+  ...CommonRoutes,
+];
