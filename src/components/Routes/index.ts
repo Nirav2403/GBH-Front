@@ -7,15 +7,14 @@ const CommonRoutes = [
   {
     id: 1,
     title: "Not Found",
-    path: "*",
+    path: "**",
     component: NotFoundPage,
-    exact: true,
   },
 ];
 
 export const routes = [
+  ...CommonRoutes,
   ...AdminRoutes,
   ...AuthRoutes,
   ...LayoutRoutes,
-  ...CommonRoutes,
 ];

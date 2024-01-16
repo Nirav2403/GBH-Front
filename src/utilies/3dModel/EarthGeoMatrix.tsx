@@ -60,6 +60,7 @@ const EarthGeoMetrix: React.FC<IEarthGeoMetrixProps> = (
     renderer.setClearColor(0x000000, 0);
 
     const textureLoader = new THREE.TextureLoader();
+    textureLoader.crossOrigin = "true";
 
     textureLoader.load(MASK_IMAGE, (texture) => {
       const earthGeometry = new THREE.SphereGeometry(
